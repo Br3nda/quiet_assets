@@ -15,4 +15,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'railties', '>= 3.1', '< 5.0'
   gem.add_development_dependency 'rake'
   gem.add_development_dependency 'tzinfo'
+  gem.add_development_dependency 'minitest'
 end
