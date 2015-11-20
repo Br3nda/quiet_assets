@@ -3,8 +3,8 @@ require 'rubygems'
 require 'rails'
 require 'rails/all'
 
-require 'test/unit'
 require 'active_support/testing/isolation'
+require "minitest/autorun"
 
 require File.expand_path('../../lib/quiet_assets', __FILE__)
 
@@ -14,7 +14,7 @@ class HomeController < ActionController::Base
   end
 end
 
-class HelperTest < Test::Unit::TestCase
+class HelperTest < Minitest::Test
   include ActiveSupport::Testing::Isolation
 
   attr_reader :app, :output
